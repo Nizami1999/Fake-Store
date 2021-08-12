@@ -1,0 +1,28 @@
+#products .product-item {
+  text-align: center;
+  cursor: pointer;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 25px;
+  margin-bottom: 24px;
+}
+#products .product-item h4 {
+  text-transform: capitalize;
+}
+
+#products .product-item h6 {
+  margin-top: 20px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+#products .product-item .product-img {
+  height: 200px;
+  overflow: hidden;
+  margin: 20px 0;
+}
+#products .product-item .product-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}

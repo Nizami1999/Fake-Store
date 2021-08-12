@@ -1,0 +1,15 @@
+#header {
+  box-shadow: 0px -6px 17px -1px #222;
+  position: fixed;
+  background-color: white;
+}
+#header h2 {
+  color: #5cccf7;
+  font-style: italic;
+  font-weight: bold;
+
+}
+#header h2 > span {
+  color: #fbdf69;
+  font-weight: 300;
+}

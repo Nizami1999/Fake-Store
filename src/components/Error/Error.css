@@ -1,0 +1,17 @@
+.error h1 {
+  text-align: center;
+  color: #222;
+  font-style: italic;
+}
+.error .error-img {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  margin: 0 auto;
+}
+.error .error-img img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
