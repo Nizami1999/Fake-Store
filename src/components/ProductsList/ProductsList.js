@@ -15,18 +15,20 @@ function ProductsList() {
     dispatch(fetchProducts());
   }, []);
 
+  const { error, loading, products } = productsData;
+
   return (
     <div id="products">
       <div className="container">
         <div className="row">
-          {productsData.loading ? (
+          {loading ? (
             <Spinner />
-          ) : productsData.error ? (
+          ) : error ? (
             <Error />
           ) : (
             productsData &&
-            productsData.products &&
-            productsData.products.map((product) => (
+            products &&
+            products.map((product) => (
               <ProductComponent category="all" key={product.id} {...product} />
             ))
           )}

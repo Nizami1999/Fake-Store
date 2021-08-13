@@ -3,13 +3,14 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useParams } from "react-router-dom";
 import "./ProductDetails.css";
-import { fetchProduct } from "../../redux/actions/productAction";
 import Spinner from "../Spinner/Spinner";
 import Error from "../Error/Error";
+import { fetchProduct } from "../../redux/actions/productsAction";
+import ProductsList from "../ProductsList/ProductsList";
 
 function ProductDetails() {
   const productId = useParams().productId;
-  const productData = useSelector((state) => state.product);
+  const productData = useSelector((state) => state.products);
   const dispatch = useDispatch();
 
   useEffect(() => {
